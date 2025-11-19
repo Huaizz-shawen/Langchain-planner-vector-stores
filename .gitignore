@@ -28,11 +28,7 @@ env.bak/
 venv.bak/
 
 # Database files
-*.sqlite3
-*.sqlite
-vector_db/
-vector_db_e5/
-vector_db_*/
+# Note: vector_db directories are intentionally NOT ignored to preserve trained models
 
 # Large files (like zip files)
 *.zip
@@ -48,4 +44,3 @@ vector_db_*/
 
 # OS
 .DS_Store
-Thumbs.db
