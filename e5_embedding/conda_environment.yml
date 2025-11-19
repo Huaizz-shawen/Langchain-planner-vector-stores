@@ -1,0 +1,17 @@
+[package]
+name = "sentence-transformers"
+version = "2.3.1"
+source = "conda-forge"
+build = "py311hcfd7a67_0"
+requirements:
+  - python >=3.11,<3.12
+  - transformers >=4.36.1
+  - torch
+  - scikit-learn
+  - huggingface-hub
+  - datasets
+test:
+  imports:
+    - sentence_transformers
+    - sentence_transformers.models
+    - sentence_transformers.util

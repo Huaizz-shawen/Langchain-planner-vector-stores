@@ -1,0 +1,23 @@
+"""
+Install requirements for E5-large embeddings
+"""
+
+# For CPU only
+install_requirements = [
+    "torch>=2.0.0",
+    "sentence-transformers>=2.2.0",
+    "langchain>=0.1.0",
+    "langchain-community>=0.0.10",
+    "langchain-openai>=0.1.0",
+    "langchain-text-splitters>=0.0.1",
+]
+
+# For GPU support (CUDA)
+install_requirements_gpu = install_requirements + [
+    "torch>=2.0.0"  # Already includes CUDA support
+]
+
+# Vector store requirements
+vectorstore_requirements = [
+    "chromadb>=0.4.0", "faiss-cpu>=1.7.4"  # Use faiss-gpu for GPU
+]
